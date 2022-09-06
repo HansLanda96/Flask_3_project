@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Best sellers</title>
+</head>
+<body style="background-color:cornsilk">
+    <h1 style="font-size:30px">Best selling tracks</h1>
+    <br>
+    <h2 style="font-size:27px">Track Name<span style="float:right;">Sales amount</span></h2>
+    <hr>
+    {% for track in tracks %}
+            <p style="font-size:23px">
+                <i>{{ track.Name }}</i><span style="float:right"><i>{{ track.Summary }}&nbsp;&nbsp;</i></span>
+            </p>
+        <hr>
+    {% endfor %}
+</body>
+</html>
